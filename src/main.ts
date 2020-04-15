@@ -8,7 +8,6 @@ async function run() {
 	console.log(`##[add-matcher]${join(__dirname, '..', '.github', 'tsc.json')}`);
 	const args = [
 		`${join(process.cwd(), 'node_modules/typescript/bin/tsc')}`,
-		'--noEmit',
 		'--noErrorTruncation',
 		'--pretty',
 		'false',
